@@ -60,5 +60,4 @@ jobs:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
           HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
         run: |
-          git remote add heroku https://git.heroku.com/mountain-ci-cd.git
-          git push heroku main
+           git push https://git.heroku.com/mountain-ci-cd.git HEAD: main
